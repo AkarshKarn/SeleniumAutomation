@@ -21,7 +21,7 @@ public class Screenshot {
         Thread.sleep(1000);
         TakesScreenshot ss = (TakesScreenshot) webDriver;
         File StFile = ss.getScreenshotAs(OutputType.FILE);
-        File DsFile = new File("C:\\Users\\DELL\\IntelliJIdeaProjects\\Selenium_Automation\\FacebookSS\\picss.png");
+        File DsFile = new File("C:\\Users\\DELL\\IntelliJIdeaProjects\\SeleniumAutomtion\\FacebookSS\\pics.png");
         FileHandler.copy(StFile, DsFile);
     }
 }

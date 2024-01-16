@@ -40,9 +40,6 @@ public class FacebookLogin {
         webDriver.findElement(By.name("login")).click();
         Thread.sleep(1000);
 
-//       // webDriver.close();
-//
-//      //  webDriver.navigate().to("https://crex.live/");
         Thread.sleep(1500);
 
         webDriver.navigate().to("https://crex.live/");
@@ -62,17 +59,7 @@ public class FacebookLogin {
 
         webDriver.quit();
 
-        // Create Account
 
-
-//
-//
-//        List<WebElement> gender= webDriver.findElements(By.className("_58mt"));
-//        System.out.println(gender.size());
-//
-//        for (WebElement ele:gender) {
-//            System.out.println("Genders are: "+ele.getText());
-//        }
 
 
     }

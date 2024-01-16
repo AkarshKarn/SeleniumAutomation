@@ -14,8 +14,8 @@ public class FacebookSignUp {
         webDriver.findElement(By.linkText("Create new account")).click();
         Thread.sleep(1000);
 
-        webDriver.findElement(By.name("firstname")).sendKeys("Akarsh");
-        Thread.sleep(1000);
+        webDriver.findElement(By.cssSelector("input[name='firstname']")).sendKeys("Akash");
+        Thread.sleep(1500);
 
         webDriver.findElement(By.name("lastname")).sendKeys("Karn");
         Thread.sleep(1000);
@@ -29,7 +29,7 @@ public class FacebookSignUp {
         webDriver.findElement(By.name("reg_passwd__")).sendKeys("123456");
         Thread.sleep(1000);
 
-        webDriver.findElement(By.name("birthday_day")).sendKeys("1");
+        webDriver.findElement(By.id("day")).sendKeys("1");
         Thread.sleep(1000);
 
         webDriver.findElement(By.name("birthday_month")).sendKeys("Jan");
@@ -37,9 +37,6 @@ public class FacebookSignUp {
 
         webDriver.findElement(By.name("birthday_year")).sendKeys("2001");
         Thread.sleep(1000);
-
-        //    webDriver.findElement(By.xpath("//label[text()='Male']")).click();
-        //    Thread.sleep(1000);
 
         webDriver.findElement(By.xpath("(//label[@class='_58mt'])[2]")).click();
         Thread.sleep(1000);
